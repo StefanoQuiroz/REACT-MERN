@@ -5,7 +5,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <MyNewComponent />
+      {/* Componentes secundarios*/}
+      {/* <MyNewComponent  someText={"This Props in components are cool!!"}/> */}
+      {/* Accesorios de componentes de clase */}
+      <MyNewComponent firstName={"Stefano"} lastName={"Quiroz"}/>
     </div>
   );
 }
