@@ -1,4 +1,4 @@
-# Prop-it-up Practice 
+# Prop-it-up Practice with SASS!!
 
 Cree un Component PersonCardque acepta los siguientes accesorios: 
 
