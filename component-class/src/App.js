@@ -8,7 +8,13 @@ function App() {
       {/* Componentes secundarios*/}
       {/* <MyNewComponent  someText={"This Props in components are cool!!"}/> */}
       {/* Accesorios de componentes de clase */}
-      <MyNewComponent firstName={"Stefano"} lastName={"Quiroz"}/>
+      {/* componente MyNewComponent  accesorios firstName y lastName*/}
+      <MyNewComponent firstName={"Stefano"} lastName={"Quiroz"}>
+        {/* Hijos de los componentes */}
+        <p>This a child</p>
+        <p>This another child</p>
+        <p>This is even another child</p>
+      </MyNewComponent>
     </div>
   );
 }
