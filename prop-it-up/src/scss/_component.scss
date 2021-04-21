@@ -1,0 +1,26 @@
+.App {
+    text-align: center;
+    /* outline: 1px dotted red;; */
+    width: 95%;
+    margin: 3.9rem  auto;
+}
+
+@mixin font ($fontFamily, $color, $fontSize){
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    color: $color;
+}
+  
+.first-component{
+    display: inline-block;
+    width: 20%;
+    border: 10px solid green;
+    box-sizing: border-box;
+    background-color: lavenderblush;
+    h1{
+        @include font(georgia, grey, 1.9rem);
+    }
+    p{
+        @include font('Lucida Sans', lightblue, 1.5rem);
+    }
+}
