@@ -1,3 +1,7 @@
+# Putting It Together
+
+Usando la misma asignación que la asignación Prop It Up, crea un botón de cumpleaños que aumente la edad de una persona en uno.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
