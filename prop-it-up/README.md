@@ -9,6 +9,8 @@ Cree un Component PersonCardque acepta los siguientes accesorios:
 
 Luego, muestre cuatro PersonCardComponents que muestren a cuatro personas diferentes, utilizando accesorios.
 
+# Otras 2 maneras de usar el props en los componentescomo si fueran DB en app.js
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
