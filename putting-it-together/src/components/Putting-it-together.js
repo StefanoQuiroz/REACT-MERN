@@ -24,7 +24,8 @@ class PuttingTogether extends Component {
                 <h1>{lastName}, {firstName}</h1>
                 <p>Age: {this.state.age}</p>  {/* edad actual */}
                 <p>Hair Color: {hairColor}</p>
-                <button onClick={ ()=>{this.buttonClick()}}>Birthday Button for {firstName} {lastName}</button>
+                <button onClick={this.buttonClick}>Birthday Button for {firstName} {lastName}</button>
+                {<button onClick={ ()=>{this.buttonClick()}}>Birthday Button for {firstName} {lastName}</button> }
             </div>
         )
     }
