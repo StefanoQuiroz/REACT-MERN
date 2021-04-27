@@ -1,3 +1,7 @@
+# React Blocks with scss styles
+
+With the traditional way with 6 basics and another using dispaly:grid.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
