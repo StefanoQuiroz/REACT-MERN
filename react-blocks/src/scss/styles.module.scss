@@ -1,0 +1,16 @@
+.eventForm{
+    background-color: #bada55;
+    display:grid;
+    place-items: center;
+    padding:2rem;
+    max-width: 24%;
+    margin: 10px auto;
+    & input, & button{
+        font-size: 1.6rem;
+    } 
+    & button{
+        background: lightblue;
+        color: white;
+        padding: 2rem;
+    }
+}

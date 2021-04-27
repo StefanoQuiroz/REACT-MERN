@@ -1,0 +1,103 @@
+/* #root * {
+    border: 3px solid black;
+}
+
+@mixin borders{
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.App{
+    margin: 1rem auto;
+    @include borders();
+    width: 95%;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #dddddd;
+    header {
+        background-color: #6aa84f;
+        @include borders();
+        width: 100%;
+        height: 6.5rem;
+    }
+    nav{
+        @include borders();
+        display: inline-block;
+        width: 26%;
+        height: 26rem;
+        background-color: #6fa8dc;
+        margin-top: 1.5rem;
+        vertical-align: top;
+    }
+    main{
+        @include borders();
+        display: inline-block;
+        width: 72%;
+        background-color: #e06666;
+        margin-top: 1.5rem;
+        margin-left: 2%;
+    }
+    .subcontent{
+        @include borders();
+        display: inline-block;
+        width: (92%/3);
+        height: 20rem;
+        background-color: #ffd966;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+    .advertisement{
+        @include borders();
+        display: inline-block;
+        width: 96%;
+        height: 6.5rem;
+        background-color: #b4a7d6;
+        margin: 2%
+    }
+} */
+
+$spacing: 24px;
+#root * {
+    border: 3px solid black;
+}
+
+.App{
+    background-color: #dddddd;
+    display: grid;
+    grid-template: 125px auto / repeat(4, 1fr);
+    overflow: hidden;
+    box-sizing: border-box;
+    grid-template-areas:
+    'header header header header'
+    'nav main main main';
+    gap: $spacing;
+    padding: $spacing;
+    margin: $spacing;
+    header {
+        background-color: #6aa84f;
+        grid-area: header;
+    }
+    nav{
+        background-color: #6fa8dc;
+        grid-area: nav;
+        height: 30rem;
+        align-self: flex-start;
+    }
+    main{
+        background-color: #e06666;
+        grid-area: main;
+        display: grid;
+        grid-template: auto 90px / repeat(3, 1fr);
+        gap: $spacing;
+        padding: $spacing;
+    }
+    .subcontent{
+        background-color: #ffd966;
+    }
+    .advertisement{
+        background-color: #b4a7d6;
+        grid-column: 1/4;
+        
+    }
+}
+
