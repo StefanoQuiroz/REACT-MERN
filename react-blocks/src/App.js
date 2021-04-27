@@ -10,14 +10,14 @@ import './scss/App.scss';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Navigation />
-      <Main>
-        <Subcontent />
-        <Subcontent />
-        <Subcontent />
-        <Advertisement />
-      </Main> 
+        <Header/>
+        <Navigation />
+        <Main>
+            <Subcontent />
+            <Subcontent />
+            <Subcontent />
+            <Advertisement />
+        </Main> 
       {/* <Form/> */}      
     </div>
   );

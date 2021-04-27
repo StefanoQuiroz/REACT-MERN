@@ -57,47 +57,56 @@
 } */
 
 $spacing: 24px;
-#root * {
+$Appcolor: #dddddd;
+$Headercolor:#6aa84f;
+$navColor:#6fa8dc;
+$mainColor:#e06666;
+$subcontentColor:#ffd966;
+$advertisementColor:#b4a7d6;
+
+#root *{
     border: 3px solid black;
 }
 
 .App{
-    background-color: #dddddd;
-    display: grid;
-    grid-template: 125px auto / repeat(4, 1fr);
-    overflow: hidden;
+    /* overflow: hidden; */ 
+    height: 85vh;
     box-sizing: border-box;
+    background-color: $Appcolor;
+    display: grid;
+    grid-template: 100px auto / repeat(4, 1fr);
     grid-template-areas:
     'header header header header'
     'nav main main main';
     gap: $spacing;
-    padding: $spacing;
     margin: $spacing;
-    header {
-        background-color: #6aa84f;
+    padding: $spacing;
+
+
+    header{
+        background-color: $Headercolor;
         grid-area: header;
     }
     nav{
-        background-color: #6fa8dc;
+        background-color: $navColor;
         grid-area: nav;
-        height: 30rem;
+        height: 26rem;
         align-self: flex-start;
     }
     main{
-        background-color: #e06666;
+        background-color: $mainColor;
         grid-area: main;
         display: grid;
-        grid-template: auto 90px / repeat(3, 1fr);
+        grid-template: auto 100px / repeat(3, 1fr);
         gap: $spacing;
         padding: $spacing;
-    }
+    }    
     .subcontent{
-        background-color: #ffd966;
+        background-color: $subcontentColor;
+
     }
     .advertisement{
-        background-color: #b4a7d6;
-        grid-column: 1/4;
-        
+        background-color: $advertisementColor;
+        grid-column: 1/4;       
     }
 }
-

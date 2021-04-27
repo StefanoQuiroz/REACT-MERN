@@ -1,0 +1,100 @@
+*{
+    outline: 1px dotted red;
+    box-sizing: border-box;
+}
+.App{
+    width: 90%;
+    background-color: grey;
+    margin: 10px auto;
+}
+
+.row{
+    padding: 10px;
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+}
+
+header{
+    height: 100px;
+    background-color: green;
+}
+
+nav{
+    background-color: blue;
+    height: 250px;
+}
+
+main{
+    background-color: red;
+}
+
+.subcontent{
+    background-color: yellow;
+    height: 120px;
+}
+
+
+.advertisement{
+    background-color: purple;
+    height: 80px;
+}
+
+@media only screen and (max-width:480px){
+    .subcontent{
+        margin-top: 2%
+    }
+    .sm-3{
+        width: 100%
+    }
+    .sm-0{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:481px){
+    .subcontent{
+        margin: 2% 3%;
+
+    }
+    .subcontent:nth-child(2){
+        margin-right:0;
+    }
+    .med-3{
+        width:100%
+    }
+    .med-0{
+        display: none;
+    }
+    .med-2{
+        width: 43%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    nav{
+        margin-right: 2%
+    }
+    main{
+        text-align:center;
+    }
+    .subcontent{
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+    .subcontent:first-child{
+        margin-left: 0;
+    }
+    .lg-3{
+        width: 100%;
+    }
+    .lg-1{
+        width: 23%;
+        display: inline-block
+    }
+    .lg-2{
+        width: 75%
+    }
+}
