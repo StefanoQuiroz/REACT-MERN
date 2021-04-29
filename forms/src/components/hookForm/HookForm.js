@@ -3,14 +3,17 @@ import React from 'react';
 const HookForm = (props) => {
     const {inputs, setInputs} = props;
 
+     //onchange={} toma el valor y lo inserta en la pagina actual
     const onChangeClick = (event) => {
-        const name = event.target.name;
+        const name = event.target.name;//simula la propiedad key
         const value = event.target.value;
         setInputs({
+            //trae todo el objeto useState de app.js
             ...inputs,
             [name]:value
         })
     }
+    //el key es el name (tiene que ser igual al state del apps.js) y el value el input data
     return (
         <form>
             <h2>Form Register</h2>
