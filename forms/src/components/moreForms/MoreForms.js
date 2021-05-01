@@ -81,7 +81,7 @@ const MoreForms = (props) => {
                 {/* <h5>{setEmail()}</h5> */}
                 {
                     (inputs.email.length > 0 && inputs.email.length < 5)?
-                    <h5>Email must be at least 2 characters</h5> : 
+                    <h5>Email must be at least 5 characters</h5> : 
                     ""
                 }
             </div>
@@ -91,7 +91,7 @@ const MoreForms = (props) => {
                 {/* <h5>{setPass()}</h5> */}
                 {
                     (inputs.pass.length > 0 && inputs.pass.length < 8) ? 
-                    <h5>Password must be at least 2 characters</h5> : 
+                    <h5>Password must be at least 8 characters</h5> : 
                     ""
                 }
             </div>
