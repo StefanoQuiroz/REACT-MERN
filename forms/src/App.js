@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 //import React from 'react';
 //import UserFormOwn from './components/formulario-clase/UseFormOwn';
 //import NameForm from './components/formReact/NameForm';
@@ -14,13 +14,13 @@ import MoreForms from './components/moreForms/MoreForms'
 import './sass/sass-class/hooksForm.scss'
 const App = () => {
   //variables de configuracion
-  /* const [state, setState] = useState({
+  const [state, setState] = useState({
     firstName: "",
     lastName: "",
     email: "",
     pass: "",
     confirmPass: ""
-  }); *///se pasa a los hijos
+  });//se pasa a los hijos
   /* const [state, setState] = useState({
     userName: "",
     emailAddress: "",
@@ -39,7 +39,7 @@ const App = () => {
       {/* <FormRendererConditional/> */}
       {/* <ManejoDeValidaciones/> */}
       {/* <FormValidation/> */}
-      <MoreForms/>
+      <MoreForms inputs={state} setInputs={setState}/>
     </div>
   );
 }
