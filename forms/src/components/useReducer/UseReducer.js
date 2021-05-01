@@ -1,5 +1,6 @@
 import React, {useReducer} from 'react';
 //Variable global con letras en mayuscula
+//useReducer hook
 const ACTIONS = {
     INCREMENT: 'increment',
     DECREMENT: 'decrement'
@@ -12,12 +13,13 @@ const UseReducer = (props) => {
         switch(action.type) {
             case ACTIONS.INCREMENT:
             //actualizamos el count sea increment o decrement con el state.count  
-            return {count: state.count+1};
+                return {count: state.count+1};
             case ACTIONS.DECREMENT:  
-            return {count: state.count-1};
+                return {count: state.count-1};
             //siempre colocar el valor por default
             default: 
-            return state.count;
+                return state;
+                //current state
         }
     }
 
