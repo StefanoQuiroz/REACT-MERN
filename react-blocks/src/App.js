@@ -10,7 +10,7 @@ import './scss/App.scss';
 function App() {
   return (
     <div className="App">
-        <Header/>
+        <Header idioma="fr"/>
         <Navigation />
         <Main>
             <Subcontent />
