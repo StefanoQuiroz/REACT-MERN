@@ -1,7 +1,10 @@
 import React, {useState, useRef} from 'react';
 
-const Subcontent = () => {
-    const [text,setTexto] = useState("");
+const Subcontent = (props) => {
+    //estado de elevacion, el estado en el padre en el main
+    const {textoDesdeArriba : {texto, setTexto}} = props;
+      
+    //const [text,setTexto] = useState("");
     const [fecha,setFecha] = useState("");
     const inputDeFecha = useRef(null);
     const onSubmitHandle = (e) => {
@@ -9,13 +12,13 @@ const Subcontent = () => {
         //const formData = new FormData(e.target);
         //const data = {};
         inputDeFecha.current.style.backgroundColor = 'green';
-        console.log({data: {text,fecha}})
+        console.log({data: {texto,fecha}})
     }
 
     return (
         <section className="subcontent">
             <form onSubmit={onSubmitHandle}>
-                <input type="text" onChange={(e)=>{setTexto(e.target.value)}} />
+                <input type="text" onChange={(e)=>setTexto(e.target.value)} value={texto}/>
                 <input type="date" ref={inputDeFecha} onChange={(e)=>{setFecha(e.target.value)}}/>
                 <button>submit</button>
             </form>            
