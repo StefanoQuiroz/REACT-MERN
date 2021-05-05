@@ -1,0 +1,30 @@
+.Form-Group{
+    width: 45%;
+    margin: 2.5rem auto;
+  
+    form{
+      background-color: #f6f6f6;
+      padding: 0.4rem;
+      margin-bottom: 0.6rem;
+      border-radius: 8px;
+      text-align: center;
+      label{
+          display:inline-block;
+          color: #bababa;
+          width: 25%;
+          text-align: center;
+      }
+      input{
+          width:70%;
+      }
+    }
+}
+
+/* .Results{
+    width: 80%;
+    margin: 1rem auto;
+    padding: 2rem;
+    h2{
+        text-align: center;
+    }
+} */
