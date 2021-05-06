@@ -5,3 +5,4 @@
 
 - Review useState
 - Review useReducer
+- Method array.map(()=> )

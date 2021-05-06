@@ -1,9 +1,11 @@
 import './App.css';
-import UseReducer from './components/UseReducer'
+//import UseReducer from './components/UseReducer'
+import Map from './components/Groceries'
 function App() {
   return (
     <div className="App">
-      <UseReducer/>
+      {/* <UseReducer/> */}
+      <Map/>
     </div>
   );
 }
