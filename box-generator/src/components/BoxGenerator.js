@@ -11,19 +11,43 @@ const BoxGenerator = () => {
         newHeight: 0
     })
 
-    //Methods
-    const onChange = (e) => {
+    //Method for color
+    const onChangeColor = (e) => {
         e.preventDefault();
         const value =e.target.value;
-        const name = e.target.value;
+        //const name = e.target.value;
         //[name]: value
         setState({
             ...state,
-            [name] : value
-
+            newColor: value,      
+        })
+    }    
+    //Method for height
+    
+    const onChangeHeight = (e) => {
+        e.preventDefault();
+        const value =e.target.value;
+        //const name = e.target.value;
+        //[name]: value
+        setState({
+            ...state,
+            newHeight: value,      
         })
     }    
     
+    //Method for width
+    const onChangeWidth = (e) => {
+        e.preventDefault();
+        const value =e.target.value;
+        //const name = e.target.value;
+        //[name]: value
+        setState({
+            ...state,
+            newWidth: value,      
+        })
+    }
+    
+    //onSubmit
     const onSubmit = (e) => {
         e.preventDefault();
         setState({
@@ -33,8 +57,8 @@ const BoxGenerator = () => {
             newHeight: 0
         })
         colorCampo.current.value= "";
-        alturaCampo.current.value= 0;
-        anchoCampo.current.value= 0
+        alturaCampo.current.value= "";
+        anchoCampo.current.value= "";
     }
 
 
@@ -43,11 +67,11 @@ const BoxGenerator = () => {
         <div>
             <form className="formulario" onSubmit={onSubmit}>
                 <label htmlFor="color">Color</label>
-                <input type="text" ref={colorCampo} onChange={onChange} name="color"/>
+                <input type="text" ref={colorCampo} onChange={onChangeColor} name="color"/>
                 <label htmlFor="height">Height</label>
-                <input type="text" ref={alturaCampo} onChange={onChange} name="newHeight"/>
+                <input type="text" ref={alturaCampo} onChange={onChangeHeight} name="newHeight"/>
                 <label htmlFor="width">Width</label>
-                <input type="text" ref={anchoCampo} onChange={onChange} name="newWidth"/>
+                <input type="text" ref={anchoCampo} onChange={onChangeWidth} name="newWidth"/>
                 <input type="submit" value="Add"/>
             </form>
 
@@ -56,8 +80,8 @@ const BoxGenerator = () => {
                     <StyledBox
                         key={i}
                         bgColor={box.color}
-                        width={box.width}
                         height={box.height}
+                        width={box.width}
                     />
                 ))}
             </div>
