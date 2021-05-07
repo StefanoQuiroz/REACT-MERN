@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.App{
+    width: 45vw;
+    margin: auto;
+    .tabs{
+        width: 95%;
+        margin: auto;
+    }
+    .results{
+        box-sizing: border-box;
+        width: 90%;
+        height: 55vh;
+        border: 2px solid #d6d6d6;
+        margin:auto;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 550;
+    }
+    .trade-mark{
+        margin-left: 34rem;
+        margin-top: 1.5rem;
+        font-family: 'Dancing Script';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.1rem
+    }
+}
+
