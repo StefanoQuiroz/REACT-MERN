@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react';
-
+import StyledBox from '../componente/StyledBox'
 const BoxGenerator = () => {
     const colorCampo = useRef();
     const [state, setState] = useState({
@@ -8,12 +8,18 @@ const BoxGenerator = () => {
     })
 
     const onChange = (e) => {
-        e.preventDefault();
-        const value= e.target.value
-        setState({
-            ...state,
-            color: value
-        })
+        try{  
+            e.preventDefault();
+            const value= e.target.value
+            setState({
+                ...state,
+                newColor: value
+            })
+        }
+        catch{
+            console.error()
+        }
+      
 
     }
 
@@ -36,9 +42,14 @@ const BoxGenerator = () => {
                 <input type="text" ref={colorCampo} onChange={onChange} placeholder="Ingrese color"/>
                 <input type="submit" value="Add"/>
             </form>
-            {/* Donde se van mostrar los cuadrados */}
+            {/* Donde se van mostrar los cuadrados en vez de un componente */}
             <div className="blocks">
-                
+                {state.boxes.map((box, i) => (
+                    <StyledBox
+                        key={i}
+                        bgColor = {box.color}
+                    />
+                ))}
             </div>
 
         </div>
