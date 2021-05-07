@@ -69,15 +69,15 @@ const BoxGenerator = () => {
                 <div className="container">
                     <div className="input">
                         <label htmlFor="color">Color</label>
-                        <input type="text" ref={colorCampo} onChange={onChangeColor} name="color"/>
+                        <input type="text" ref={colorCampo} onChange={onChangeColor} name="color" placeholder="Enter the color example: red, blue, #000 or rgb"/>
                     </div>
                     <div className="input">
                         <label htmlFor="height">Height</label>
-                        <input type="text" ref={alturaCampo} onChange={onChangeHeight} name="newHeight"/>    
+                        <input type="text" ref={alturaCampo} onChange={onChangeHeight} name="newHeight" placeholder="Enter a height example em, rem, %, px"/>    
                     </div>
                     <div className="input">
                         <label htmlFor="width">Width</label>
-                        <input type="text" ref={anchoCampo} onChange={onChangeWidth} name="newWidth"/>
+                        <input type="text" ref={anchoCampo} onChange={onChangeWidth} name="newWidth" placeholder="Enter a width example em, rem, %, px"/>
                     </div>
                 </div>
                 <input className="button" type="submit" value="Add"/>
