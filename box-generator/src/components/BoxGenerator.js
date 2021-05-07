@@ -51,7 +51,7 @@ const BoxGenerator = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         setState({
-            boxes: [...state.boxes, {color: state.newColor, width: state.newWidth, height: state.newHeight}],
+            boxes: [...state.boxes, {color: state.newColor, height: state.newHeight, width: state.newWidth }],
             newColor: "",
             newWidth: 0,
             newHeight: 0
@@ -82,7 +82,7 @@ const BoxGenerator = () => {
                         bgColor={box.color}
                         height={box.height}
                         width={box.width}
-                    />
+                    ></StyledBox>
                 ))}
             </div>
         </div>
