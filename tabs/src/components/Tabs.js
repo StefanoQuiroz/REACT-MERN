@@ -32,7 +32,7 @@ const Tabs = (props) => {
             
             {/* Mostrar el resultado - comentario: cambiar por un p tag*/}
             <div className="results">
-                Tab {state.currentTab} content is showing here
+                Tab {state.currentTab} content is showing here.
             </div>
             <div className="trade-mark">
                 By Stefano Quiroz
