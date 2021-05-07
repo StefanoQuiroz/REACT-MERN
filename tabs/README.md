@@ -10,3 +10,11 @@ Desarrolla un componente de pestañas que abarque una variedad de elementos. Cad
 - Bonificación Ninja: permite que cada pestaña tenga opcionalmente una devolución de llamada que se activa cuando se hace clic en el encabezado de la pestaña correspondiente.
 - Bonificación Ninja: agrega algunas animaciones CSS a la pestaña de cambio para suavizar la experiencia del usuario
 - Bono Sensei: agrega una animación JavaScript a la acción de cambio de pestaña.
+
+## Extra
+- Agregue animacion "Loader" con keyframes de styled-components.com
+Animacion:
+
+```sh
+    animation: ${sideToSideSlide} 2s ease infinite;    
+```
