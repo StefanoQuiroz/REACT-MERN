@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Tabs = () => {
+const Tabs = (props) => {
     let array = [1,2,3];
     const [state, setState] = useState({
         currentTab: 1
@@ -12,9 +12,6 @@ const Tabs = () => {
         })
     }
 
-
-
-
     return (
         <div>
             {/* map(item, index) */}
@@ -23,7 +20,7 @@ const Tabs = () => {
                     key={index}
                     onClick={(e) => onClickHandle(e,item)}
                 >   
-                    Tab {state.currentTab}
+                    Tab {item}
                 </button>
             ))}
             {/* Resultado en un div cuando haga click en la pestaña */}
