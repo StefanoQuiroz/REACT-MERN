@@ -7,7 +7,8 @@ const BoxGenerator = () => {
     const [state, setState] = useState({
         boxes: [],
         newColor: "",
-        newWidth: 0
+        newWidth: 0,
+        newHeight: 0
     })
 
     //Methods
@@ -26,11 +27,14 @@ const BoxGenerator = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         setState({
-            boxes: [...state.boxes, {color: state.newColor, width: state.newWidth}],
+            boxes: [...state.boxes, {color: state.newColor, width: state.newWidth, height: state.newHeight}],
             newColor: "",
-            newWidth: 0
+            newWidth: 0,
+            newHeight: 0
         })
         colorCampo.current.value= "";
+        alturaCampo.current.value= 0;
+        anchoCampo.current.value= 0
     }
 
 
@@ -41,14 +45,21 @@ const BoxGenerator = () => {
                 <label htmlFor="color">Color</label>
                 <input type="text" ref={colorCampo} onChange={onChange} name="color"/>
                 <label htmlFor="height">Height</label>
-                <input type="text" ref={alturaCampo} onChange={onChange} name="height"/>
-                <label htmlFor="width">Height</label>
-                <input type="text" ref={anchoCampo} onChange={onChange} name="width"/>
+                <input type="text" ref={alturaCampo} onChange={onChange} name="newHeight"/>
+                <label htmlFor="width">Width</label>
+                <input type="text" ref={anchoCampo} onChange={onChange} name="newWidth"/>
                 <input type="submit" value="Add"/>
             </form>
 
             <div className="results">
-                <StyledBox/>
+                {state.boxes.map((box, i) => (
+                    <StyledBox
+                        key={i}
+                        bgColor={box.color}
+                        width={box.width}
+                        height={box.height}
+                    />
+                ))}
             </div>
         </div>
     );
