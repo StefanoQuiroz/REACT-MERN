@@ -66,13 +66,21 @@ const BoxGenerator = () => {
     return (
         <div>
             <form className="formulario" onSubmit={onSubmit}>
-                <label htmlFor="color">Color</label>
-                <input type="text" ref={colorCampo} onChange={onChangeColor} name="color"/>
-                <label htmlFor="height">Height</label>
-                <input type="text" ref={alturaCampo} onChange={onChangeHeight} name="newHeight"/>
-                <label htmlFor="width">Width</label>
-                <input type="text" ref={anchoCampo} onChange={onChangeWidth} name="newWidth"/>
-                <input type="submit" value="Add"/>
+                <div className="container">
+                    <div className="input">
+                        <label htmlFor="color">Color</label>
+                        <input type="text" ref={colorCampo} onChange={onChangeColor} name="color"/>
+                    </div>
+                    <div className="input">
+                        <label htmlFor="height">Height</label>
+                        <input type="text" ref={alturaCampo} onChange={onChangeHeight} name="newHeight"/>    
+                    </div>
+                    <div className="input">
+                        <label htmlFor="width">Width</label>
+                        <input type="text" ref={anchoCampo} onChange={onChangeWidth} name="newWidth"/>
+                    </div>
+                </div>
+                <input className="button" type="submit" value="Add"/>
             </form>
 
             <div className="results">
