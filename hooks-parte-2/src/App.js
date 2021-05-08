@@ -5,9 +5,10 @@ import './App.css';
 //import Map from './components/Groceries'
 //import MessageForm from './elevateState/MessageForm'
 //import MessageDisplay from './elevateState/MessageDisplay'
-import MyComponent from './envioDeArgumentosDevolucion/MyComponent'
+//import MyComponent from './envioDeArgumentosDevolucion/MyComponent'
+import FruitForm from './otrosTiposDeEntrada/FruitForm'
 
-const movies = ["Forest Gump", "Rescatando al soldado Ryan", "Piratas en el Caribe", "Cara cortada"];
+//const movies = ["Forest Gump", "Rescatando al soldado Ryan", "Piratas en el Caribe", "Cara cortada"];
 function App() {
 /*   const [currentMsg, setCurrentMsg] = useState("There are no messages")
   const youveGotMail = (newMessage) => {
@@ -22,7 +23,8 @@ function App() {
       {/* <> </> fragments */}
       {/* <MessageForm onNewMessage={youveGotMail}/>
       <MessageDisplay message={currentMsg}/> */}
-      <MyComponent movies={movies}/>
+      {/* <MyComponent movies={movies}/> */}
+      <FruitForm/>
     </div>
   );
 }
