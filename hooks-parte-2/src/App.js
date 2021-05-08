@@ -6,7 +6,9 @@ import './App.css';
 //import MessageForm from './elevateState/MessageForm'
 //import MessageDisplay from './elevateState/MessageDisplay'
 //import MyComponent from './envioDeArgumentosDevolucion/MyComponent'
-import FruitForm from './otrosTiposDeEntrada/FruitForm'
+//import FruitForm from './otrosTiposDeEntrada/FruitForm'
+import MyContext from './contextCodingDojo/MyContext'
+import AppWrapperComponent from './contextCodingDojo/AppWrapperComponent'
 
 //const movies = ["Forest Gump", "Rescatando al soldado Ryan", "Piratas en el Caribe", "Cara cortada"];
 function App() {
@@ -24,7 +26,13 @@ function App() {
       {/* <MessageForm onNewMessage={youveGotMail}/>
       <MessageDisplay message={currentMsg}/> */}
       {/* <MyComponent movies={movies}/> */}
-      <FruitForm/>
+      {/* <FruitForm/> */}
+      <MyContext.Provider value={"context value"} >
+        <AppWrapperComponent>
+        </AppWrapperComponent>
+      </MyContext.Provider>
+
+
     </div>
   );
 }
