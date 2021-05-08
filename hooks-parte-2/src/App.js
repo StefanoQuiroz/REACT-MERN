@@ -27,10 +27,11 @@ function App() {
       <MessageDisplay message={currentMsg}/> */}
       {/* <MyComponent movies={movies}/> */}
       {/* <FruitForm/> */}
-      <MyContext.Provider value={"context value"} >
+      <MyContext.Provider value={"First using context with useContext"}>
         <AppWrapperComponent>
         </AppWrapperComponent>
       </MyContext.Provider>
+      
 
 
     </div>

@@ -1,10 +1,10 @@
 import React, {useContext} from 'react';
 import MyContext from './MyContext';
-const AppWrapperComponent = () => {
-    const context = useContext(MyContext)
+const AppWrapperComponent = (props) => {
+    const context = useContext(MyContext);
     return (
         <div>
-            hello{context}
+            Hello {context}
         </div>
     );
 }
