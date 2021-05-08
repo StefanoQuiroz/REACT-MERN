@@ -1,5 +1,5 @@
 //import React, {useState} from 'react';
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 //import UseReducer from './components/UseReducer'
 //import Map from './components/Groceries'
@@ -17,6 +17,7 @@ function App() {
     //actualiza el currentMsg
     setCurrentMsg(newMessage)
   } */
+  const [val, setVal] = useState(1)
   return (
     <div className="App">
       {/* <UseReducer/> */}
@@ -27,7 +28,13 @@ function App() {
       <MessageDisplay message={currentMsg}/> */}
       {/* <MyComponent movies={movies}/> */}
       {/* <FruitForm/> */}
-      <MyContext.Provider value={"First using context with useContext"}>
+      {/* Pasar valores estáticos */}
+      {/* <MyContext.Provider value={"First using context with useContext"}>
+        <AppWrapperComponent>
+        </AppWrapperComponent>
+      </MyContext.Provider> */}
+      {/* Usando el useState al vallue le pasamos como objeto*/}
+      <MyContext.Provider value={{val,setVal}}>
         <AppWrapperComponent>
         </AppWrapperComponent>
       </MyContext.Provider>
