@@ -10,12 +10,12 @@ const fruits = [
 
 
 const FruitForm = () => {
-    // const [selectedFruit, setSelectedFruit] = useState(fruits[0]);
+    const [selectedFruit, setSelectedFruit] = useState(fruits[0]);
     const [isTasty, setIsTasty] = useState(false); //sino se hace click es false si le hace es true
     //selectedFruit => fruits[0] = "Banana"
 
     //si se pasa un valor en blanco, valor inicial debe ser un string vacío
-    const [selectedFruit, setSelectedFruit] = useState("");
+    //const [selectedFruit, setSelectedFruit] = useState("");
 
 
     /* const onChangeSelect = (e) => {
@@ -35,7 +35,7 @@ const FruitForm = () => {
         <form onSubmit={onSubmitHandle}>
             <select value={selectedFruit} onChange={(e)=>setSelectedFruit(e.target.value)}>
                 {fruits.map((fruit, index) => (
-                    <option value={""} key={index}>{fruit}</option>
+                    <option value={fruit} key={index}>{fruit}</option>
                 ))}
             </select>
             <label>
