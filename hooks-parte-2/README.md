@@ -11,3 +11,4 @@
 - Otras formas de entrada (<select/> & <input type="checkbox"/>)
 - createContext & useContext
 - useState con useContext
+- Patrón Render Props (reutilizando componentes)
