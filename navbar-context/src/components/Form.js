@@ -11,11 +11,9 @@ const Form = (props) => {
     //cambia el value y el setValue
     const onChange =(e) => {
         e.preventDefault();
-        setState(e.target.value);
-        
+        setState(e.target.value);    
     }
 
-    
     return (
         <StyledForm>
             <StyledLabel htmlFor="name">Tu Nombre: </StyledLabel>
