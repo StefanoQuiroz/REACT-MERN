@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'
+//import './App.css'
 import Wrapper from './components/Wrapper';
 import Navbar from './components/Navbar';
 import FormWrapper from './components/FormWrapper';

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import MyContext from './MyContext'
+import StyledNavBar from '../styledComponents/StyledNavBar'
 const Navbar = () => {
     //const context = useContext(MyContext)
     const {state} = useContext(MyContext)
@@ -13,9 +14,9 @@ const Navbar = () => {
         }
     }
     return (
-        <div>
+        <StyledNavBar>
            {name()}
-        </div>
+        </StyledNavBar>
     );
 }
 
