@@ -1,3 +1,4 @@
-# Welcome REACT FRONTEND!!!!
+# REACT
 
-WAHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!
+Aprendiendo programación Funcional - hooks del track de React Spanish de Coding Dojo.
+
